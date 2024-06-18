@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <style>
+        .whole{
+            padding:30px;
+            display:flex;
+            flex-direction: column;
+            height:90vh;
+            width:50vw;
+        }
+        .imgg1{
+            align-self: flex-end;
+            height:30px;
+        }
+        .imgg2{
+            border-radius:50px;
+            height:110px;
+            width:110px;
+            align-self: center;
+        }
+        .lastdiv{
+            background-color: lightgray;
+            justify-content: space-between;
+            padding:10px;
+        }
+        label{
+            font-weight:700;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="whole">
+        <img src="C:\Users\akula\Downloads\MERN\FirstSubmission\arrow.png" alt="no image" class="imgg1"/>
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTSLU5_eUUGBfxfxRd4IquPiEwLbt4E_6RYMw&s" alt="no image" class="imgg2"/>
+        <label for="username" class="mt-3">Username</label>
+        <input id="username"placeholder="Enter Username">
+        <label for="pwd" class="mt-3">Password</label>
+        <input id="pwd"placeholder="Enter Password">
+
+        <button class="btn btn-success mt-3">Login</button>
+
+        <div style="text-align: left;" class="mt-3">
+            <input type="checkbox" id="chc">
+            <label for="chc">Remember me</label> 
+        </div>
+        
+        <div class="d-flex flex-row lastdiv mt-3">
+            <button class="btn btn-danger">Cancel</button>
+            <p>Forgot <span style="text-decoration: underline;">password?</span></p>
+        </div>
+    </div>
+</body>
+</html>
